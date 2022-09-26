@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "izpoop": {
+      "hosting": {
+        "izpoop": [
+          "izpoop"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "izpoop"
+  }
+}
