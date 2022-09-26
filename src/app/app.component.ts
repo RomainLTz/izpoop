@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'izpoop';
+
+  message = "[WIP] Zone de chantier, izpoop est en cours de construction..."
 }

@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+// Using AuraTheme2 Dark Soft @Dalton Menezes
+// https://github.com/daltonmenezes/aura-theme/tree/main/packages/color-palettes
+$primary: #8464c6;
+$selections: #3d375e7f;
+$selections-no-alpha: #29263c;
+$secondary: #54c59f;
+$tertiary: #c7a06f;
+$quarternary: #c17ac8;
+$quinary: #6cb2c7;
+$senary: #c55858;
+$foregrounds: #bdbdbd;
+$comments: #6d6d6d;
+$backgrounds: #15141b;
+
+
+body {
+    background-color: $backgrounds;
+}
