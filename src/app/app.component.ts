@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { FirebaseService } from './firebase/firebase.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -8,5 +10,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'izpoop';
 
-  message = "[WIP] Zone de chantier, izpoop est en cours de construction..."
+  message = "[WIP] Zone de chantier, izpoop est en cours de construction...";
+
+  data: Observable<any> = this.firebaseService.all();
+
+  constructor(private firebaseService: FirebaseService) {}
 }

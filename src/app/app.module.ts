@@ -1,7 +1,7 @@
-import { ComponentsModule } from '@izpoop/components';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
+import { ComponentsModule } from '@izpoop/components';
 import { FirebaseModule } from './firebase/firebase.module';
 import { NgModule } from '@angular/core';
 

@@ -2,6 +2,7 @@ import { getAuth, provideAuth } from '@angular/fire/auth';
 import { getDatabase, provideDatabase } from '@angular/fire/database';
 import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 
+import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { BrowserModule } from '@angular/platform-browser';
 import { FirebaseService } from './firebase.service';
 import { FirestoreModule } from '@angular/fire/firestore';
@@ -14,7 +15,8 @@ import { environment } from '../../environments/environment';
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
     provideDatabase(() => getDatabase()),
-    FirestoreModule
+    FirestoreModule,
+    AngularFireDatabaseModule
   ],
   providers: [FirebaseService],
   bootstrap: []
